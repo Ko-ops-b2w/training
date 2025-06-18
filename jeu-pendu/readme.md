@@ -5,8 +5,8 @@ C'est un jeu qui consite à deviner des mots cachés
 (le choix des lettres pour trouver ce mot est limité)
 
 # Objectif du Projet
-
-
+C'est de deviner un mot caché en proposant des lettres, une par une, avant d'avoir fait trop d'erreurs.
+De maitriser les différents types de function, comment créer des élements et comment recuperer les élement html dans le JS
 # Découpage du Projet
 Conception
 (nombre de tentives, affichage des lettres)
