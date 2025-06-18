@@ -1,0 +1,33 @@
+body {
+   text-align: center;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(9, 101, 206);
+}
+.carre {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-position: center;
+    background-size: cover;
+    
+}
+.morpion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rejouer {
+    text-transform: uppercase;
+    padding: 10px;
+    color: black;
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
