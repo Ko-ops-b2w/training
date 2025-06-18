@@ -1,0 +1,180 @@
+/* 🌟 Style Global */Add commentMore actions
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🌟 Conteneur du jeu */
+.game-container {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 🌟 Titre */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* 🌟 Pendu SVG */
+.pendu {
+    width: 200px;
+    height: 250px;
+    margin: 20px auto;
+}
+
+/* 🌟 Parties du pendu animées */
+.body-part {
+    display: none;
+    stroke-dashoffset: 0;
+    animation: draw 0.5s linear forwards;
+}
+
+/* ✨ Animation du pendu */
+@keyframes draw {
+    from {
+        stroke-dashoffset: 100;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* 🌟 Affichage du mot */
+#word-display {
+    font-size: 28px;
+    letter-spacing: 8px;
+    font-weight: bold;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+/* 🌟 Message de victoire ou défaite */
+#message {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* 🌟 Clavier virtuel */
+#keyboard {
+    margin-top: 20px;
+}
+
+/* 🌟 Bouton Rejouer */
+button {
+    background: #ff4757;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e84118;
+}
+
+/* 🌟 Ajout du compteur d'erreurs */
+#error-counter {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ff6b81;
+}
+
+/* 🌟 Barre de progression des erreurs */
+.progress-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative; 
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #ff4757;
+    transition: width 0.3s ease-in-out;
+}
+
+/* 🌙 Mode sombre */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .game-container {
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+}
+
+.dark-mode button {
+    background-color: #444;
+    color: white;
+    border: 1px solid white;
+}
+
+.dark-mode svg line, .dark-mode svg circle {
+    stroke: white;
+}
+/* 🎮 Clavier virtuel amélioré */
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.key {
+    width: 40px; /* Augmenté */
+    height: 40px; /* Augmenté */
+    font-size: 20px; /* Texte plus grand */
+    font-weight: bold; /* Texte en gras */
+    text-align: center;
+    line-height: 40px;
+    background-color: #f5f5f5;
+    border: 2px solid #666;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+    transition: background 0.2s, transform 0.1s;
+    color: #0f2027;
+}
+
+.key:hover {
+    background-color: #ddd;
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+}
+
+.key.disabled {
+    background-color: #888;
+    border: 2px solid #555;
+    color: white;
+    cursor: not-allowed;
+    transform: none;
+}

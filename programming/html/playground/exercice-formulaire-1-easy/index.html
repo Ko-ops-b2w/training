@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice-formulaire-1-easyt</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h2>Contactez-nous</h2>
+    <form action="/submit-form" method="post">
+
+        <div class="form">
+            <label for="nom">Nom</label requied>
+            <input class="largeur-element" type="text" id="nom" name="nom" placeholder="votre nom">
+        </div>
+
+        <div class="form">
+            <label for="email">Email</label>
+            <input class="largeur-element" type="text" id="email" name="email" placeholder="email">
+        </div>
+
+        <div class="form">
+            <label for="sujet">Sujet</label>
+            <select class="largeur-element" name="sujet" id="sujet">
+                <option value="">Demande d'information</option>
+                <option value="">Demande de livraison</option>
+            </select>
+
+
+        </div>
+
+        <div class="form">
+            <label for="message">Message</label>
+            <textarea class="largeur-element" type="text" id="message" name="message"></textarea>
+        </div>
+
+        <div class="form">
+
+            <label for="vehicle1">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="conditions">
+                J'accepte les conditions d'utilisation
+            </label>
+        </div>
+
+        <div>
+
+            <button class="envoyer">Envoyer</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

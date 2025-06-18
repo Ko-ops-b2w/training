@@ -1,0 +1,88 @@
+:root {
+  --bg-color: white;
+}
+
+body {
+  background: var(--bg-color);
+  margin: 0;
+  color: var(--color);
+}
+
+.header {
+  color: rgb(39, 176, 240);
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid rgb(194, 193, 193);
+  margin: 10px;
+}
+h1 {
+  font-size: medium;
+}
+.btn {
+  text-decoration: none;
+  color: rgb(39, 176, 240);
+}
+.nav {
+  display: flex;
+  gap: 15px;
+}
+.block {
+  background-color: rgb(230, 228, 228);
+  border-radius: 5px;
+}
+.flex-group {
+  background-color: rgb(230, 228, 228);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+}
+.flex-group > h2 {
+  color: rgb(39, 176, 240);
+}
+.flex-group > p {
+  color: rgb(146, 146, 146);
+}
+.flex {
+  display: flex;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  gap: 15px;
+}
+.bien {
+  text-align: center;
+  padding: 50px;
+}
+.bien > h1 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.footer {
+  color: rgb(146, 146, 146);
+  background-color: rgb(230, 228, 228);
+  border-top: 1px solid rgb(194, 193, 193);
+  text-align: center;
+  padding: 10px;
+}
+.theme-sombre {
+  --bg-color: black;
+  --color: white;
+  footer {
+    background-color: rgb(44, 44, 44);
+  }
+  header {
+    background-color: black;
+  }
+  .flex-group {
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+  }
+  .block {
+    background-color: rgb(88, 88, 88);
+  }
+}

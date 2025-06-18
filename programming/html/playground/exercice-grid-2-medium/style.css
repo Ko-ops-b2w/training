@@ -1,0 +1,225 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.entête {
+  background-color: rgb(3, 38, 78);
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+}
+
+#eco {
+  color: white;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 20px;
+}
+
+/* GESTION DES BOUTONS */
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-green {
+  background-color: rgb(115, 247, 115);
+  border: solid rgb(148, 247, 148);
+  color: white;
+}
+
+.btn-block {
+  display: block;
+}
+
+.mini-btn {
+  padding: 0.25em 0.5em;
+}
+
+.btn-gray {
+  background-color: rgb(221, 223, 224);
+  border: 1px solid rgb(221, 223, 224);
+  color: black;
+}
+
+/* FIN DE GESTIONS DE BOUTONS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 15% 60% 25%);
+  grid-template-areas:
+    "header header header"
+    "navigation conception article"
+    "footer footer footer";
+}
+
+.navigation {
+  background-color: rgb(245, 243, 240);
+  grid-area: navigation;
+}
+
+/* header
+   navigation
+   conception
+   article
+
+*/
+.header {
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(5, 38, 100);
+  align-items: center;
+
+  gap: 10px;
+}
+
+.logo {
+  object-fit: contain;
+  width: auto;
+  height: 45px;
+}
+
+.conception {
+  padding: 20px;
+  grid-area: conception;
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+.article {
+  padding: 20px;
+  background-color: rgb(245, 243, 240);
+  grid-area: article;
+}
+
+.savoir {
+  text-align: center;
+}
+
+.trait {
+  border: 0.5px solid;
+  color: rgb(175, 182, 182);
+}
+
+.abon {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* padding: 20px; */
+}
+
+.element {
+  padding: 10px;
+  width: 90%;
+}
+
+.container {
+  margin: 10px;
+}
+
+.container-categorie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer {
+  background-color: rgb(3, 38, 78);
+  grid-area: footer;
+  padding: 10px;
+}
+
+.foot {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.en {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  color: white;
+}
+
+.logo2 {
+  object-fit: contain;
+  width: 10%;
+  height: 20%;
+}
+
+.none {
+  list-style-type: none;
+  gap: 10px;
+}
+
+.image {
+  display: flex;
+  gap: 15px;
+  opacity: 0.5;
+}
+
+.img-ico {
+  height: 25px;
+  width: auto;
+  flex-basis: 25px;
+}
+
+.title-footer {
+  color: white;
+}
+
+.copy {
+  text-align: center;
+}
+.text-footer {
+  color: rgb(192, 192, 191);
+}
+.avantages {
+  display: flex;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid {
+    grid-template-areas:
+      " header header"
+      " navigation navigation"
+      " conception article"
+      " footer footer";
+    grid-template-columns: 2fr 1fr;
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-areas:
+      "header"
+      "navigation"
+      "conception "
+      "article"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+  .avantages {
+    flex-wrap: wrap;
+  }
+  .foot {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .trait-footer {
+    border: 0.5px solid;
+    color: rgb(175, 182, 182);
+  }
+}

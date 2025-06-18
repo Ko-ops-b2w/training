@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice-formulaire-2-medium</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Créer un compte</h1>
+    <form action="/submit-form" method="post">
+
+        <div class="group">
+            <label for="prénom">Prénom</label requied>
+            <input class="element" type="text" id="prénom" name="prénom" placeholder="prénom">
+        </div>
+
+        <div class="group">
+            <label for="nom">Nom</label>
+            <input class="element" type="text" id="nom" name="nom" placeholder="nom">
+        </div>
+
+        <div class="group">
+            <label for="email">Email</label>
+            <input class="element" type="email" id="email" name="email" placeholder="email">
+        </div>
+
+        <div class="group">
+            <label for="mot de passe">Mot de passe</label requied>
+            <input class="element" type="password" id="mot de passe" name="mot de passe" placeholder="mot de passe"
+                required>
+        </div>
+
+        <p><small> mot de passe doit contenir au moins 8 caractères, une majuscule et un chiffre</small></p>
+
+        <div class="group">
+            <label for="date">Date de naissance</label>
+            <input class="element" type="date" id="date" name="date" value="jj/mm/aaaa">
+
+        </div>
+
+
+        <p>Genre</p>
+        <div class="genre">
+            <input type="radio" id="homme" name="fav_language" value="Homme">
+            <label for="homme">Homme</label><br>
+            <input type="radio" id="femme" name="fav_language" value="Femme">
+            <label for="femme">Femme</label><br>
+            <input type="radio" id="autre" name="fav_language" value="Autre">
+            <label for="autre">Autre</label><br>
+        </div>
+
+        <div class="group">
+            <label for="pays">Pays</label>
+            <select class="element" name="pays" id="pays">
+                <option value="">Sélectionnez votre pays</option>
+                <option value="">France</option>
+                <option value="">Belgique</option>
+            </select>
+        </div>
+        <div class="group">
+
+            <label for="vehicle1">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="conditions">
+                J'accepte les <a target="_blank" href="text">conditions d'utilisation</a> et
+                la<a target="_blank" href="text"> politique de confidentialité </a>
+            </label>
+        </div>
+
+        <div class="group">
+            <label for="newsletter">
+                <input class="newsletter" type="checkbox" id="newsletter" name="newsletter" checked>
+                Je souhaite recevoir la newsletter
+            </label>
+        </div>
+
+
+
+
+
+        <section class="fin">
+
+            <button class="rein">Reinitialiser</button>
+
+
+
+            <button class="inscrire">S'inscrire</button>
+
+        </section>
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>

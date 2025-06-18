@@ -1,0 +1,61 @@
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+
+
+
+
+}
+
+.barnav {
+    color: white;
+    display: flex;
+
+}
+
+.navigation {
+    background-color: rgb(3, 24, 95);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.button {
+    background-color: rgb(116, 179, 238);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.bien {
+    background-color: aliceblue;
+    padding: 300px;
+}
+
+#h {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+
+}
+
+p {
+    text-align: center;
+    padding: 30px;
+    font-size: small;
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+}
+
+h1 {
+    padding: 15px;
+}

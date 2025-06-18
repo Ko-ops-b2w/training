@@ -1,0 +1,147 @@
+.body {
+    margin-top: 108px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    min-height: 50vh;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(3, 30, 70);
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav {
+    color: white;
+
+}
+
+.button {
+    background-color: rgb(71, 170, 236);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+.bar {
+    display: flex;
+    align-self: center;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.horizon {
+    text-align: center;
+    padding: 200px;
+}
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: normal;
+}
+
+.service>div {
+    background-color: aliceblue;
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+    line-height: 30px;
+    border-radius: 10px;
+    max-width: 25%;
+}
+
+.background {
+    background-image: url("./background.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.service {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+
+}
+
+h2 {
+    font-size: xx-large;
+
+}
+
+#ser {
+    margin: 30px;
+}
+
+.portfolio {
+    background-color: rgb(183, 241, 222);
+    padding: 30px;
+
+
+
+}
+
+.element {
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    border-style: dotted;
+}
+
+.text {
+    padding: 10px;
+    margin: 20px;
+}
+
+p {
+    padding: 10px;
+}
+
+.img {
+    height: 50px;
+    width: auto;
+}
+
+li:hover {
+    background-color: rgb(235, 119, 119);
+}
+
+.contact {
+    background-color: aquamarine;
+    padding: 30px;
+}
+
+.fin {
+    background-color: rgb(3, 30, 70);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.link {
+    color: white;
+}

@@ -1,0 +1,27 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px;
+   
+  
+    
+  }
+  
+  .ti {
+    background-color: rgb(87, 190, 238);
+
+  }
+  #tête {
+    border: 1px solid #dddddd;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(247, 248, 250, 0.644);
+  }
+
+

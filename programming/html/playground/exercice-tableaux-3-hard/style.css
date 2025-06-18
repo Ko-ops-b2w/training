@@ -1,0 +1,53 @@
+body {
+    font-family: arial, sans-serif;
+    padding: 50px;
+}
+
+
+.te {
+    color: rgb(21, 3, 102);
+}
+
+.fa {
+    color: red;
+    text-align: right;
+
+}
+
+.entête {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.en {
+    text-align: left;
+}
+
+.dig {
+    background-color: rgb(209, 233, 243);
+    padding: 15px;
+    border-left: solid 5px rgb(88, 167, 231);
+}
+
+.left p {
+    text-align: right;
+}
+
+.tableau th {
+    padding: 40px;
+}
+
+#des {
+    width: 60%;
+}
+
+td {
+    padding: 10px;
+
+
+}
+
+.total {
+    width: 150%;
+}

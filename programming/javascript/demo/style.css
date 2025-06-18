@@ -1,0 +1,59 @@
+.souris{
+    background-color: rgb(25, 152, 255);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+     pointer-events: none;
+     transition: transform 0.02s linear;
+}
+
+
+
+.button{
+    background-color: gray;
+    border-radius: 15px;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+  
+}
+
+.container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      pointer-events: none;
+     transition: transform 0.02s linear;
+    }
+
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+    .circle1 {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      z-index: 1;
+    }
+
+    .circle2 {
+      width: 120px;
+      height: 120px;
+      background-color: white;
+      z-index: 2;
+    }
+
+    .circle3 {
+      width: 80px;
+      height: 80px;
+      background-color: rgb(22, 114, 235);
+      z-index: 3;
+    }

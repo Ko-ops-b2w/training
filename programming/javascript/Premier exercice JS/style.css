@@ -1,0 +1,15 @@
+.button {
+    background-color: rgb(7, 223, 140);
+    border-radius: 20px;
+    border: solid 1px rgb(7, 223, 140);
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#titre {
+    background-color: rgb(18, 128, 231);
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}

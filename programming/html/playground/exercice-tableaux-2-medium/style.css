@@ -1,0 +1,33 @@
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+    border-spacing: 2px;
+   
+    border-collapse: collapse;
+  }
+  #tête {
+    color: #f6fafaef;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(96, 192, 240, 1) 0%, rgba(206, 242, 206, 1) 45%, rgba(31, 181, 53, 1) 100%);
+    font-weight: bold;
+    
+  }
+  .entete {
+    color: #f6fafaef;
+    background-color: rgb(33, 15, 82);
+   text-transform: uppercase;
+   border-spacing: 0px;
+   padding: 20px;
+   
+
+  }
+  
+  td,th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px;
+}
+#to {
+  text-align: center;
+}

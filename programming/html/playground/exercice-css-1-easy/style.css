@@ -1,0 +1,24 @@
+.important {
+
+  color: red;
+}
+
+p#special {
+
+  color: green;
+  text-decoration: underline;
+}
+
+div {
+
+  color: blue;
+}
+
+.paragraphe {
+  padding: 10px;
+  background-color: rgb(240, 239, 239);
+}
+
+p {
+  color: blue;
+}

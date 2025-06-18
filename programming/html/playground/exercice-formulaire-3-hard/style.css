@@ -1,0 +1,34 @@
+ul {
+    list-style: none;
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    margin: 30px;
+    left: 50%;
+
+
+
+}
+
+li a {
+    padding: 60px;
+
+}
+
+.circle {
+    width: 20px;
+    height: 30px;
+    border: 0px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153, 153, 161);
+    color: white;
+    margin: 50px;
+
+}
+
+.dev {
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  background-image: url("img.png");
+  background-repeat: no-repeat;
+ background-size: cover;
+}
+#title{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.jeu-container {
+  max-width: 600px;
+  height: 3 00px;
+  margin: auto;
+  background: linear-gradient(90deg, #00e1ff, #ff00dd);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: solid 20px white;
+ 
+}
+
+#mots {
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  margin-bottom: 20px;
+}
+.text {
+  text-transform: uppercase;
+  color: white;
+}
+
+#lettres button {
+  color: white;
+  background-color: rgb(86, 9, 211);
+  margin: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #fdfeff;
+  cursor: not-allowed;
+}
+
+#message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: red;
+  
+}
+#errors-left{
+  color:rgb(239, 243, 5);
+  font-size: 30px;
+}
+
+#btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: solid white;
+  font-size: 20px;
+}
+.btn2{
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #07a8f3;
+  border: solid  #07a8f3;
+  color: white;
+  width: auto;
+}
+#score {
+  color: red;
+  font-size: 20px;
+}

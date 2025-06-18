@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+}
+.bn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px 24px; /*0.75em 1.5em*/
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 0px solid;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.bouton-blue {
+  background-color: rgb(47, 163, 240);
+}
+.bouton-gray {
+  background-color: rgb(165, 170, 173);
+}
+.bouton-red {
+  background-color: rgb(247, 40, 40);
+}
+
+.trans {
+  text-align: center;
+  padding: 30px;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+p {
+  font-size: small;
+  font-style: oblique;
+}
+
+.btn-decalage:hover {
+  transform: translateY(10px);
+}
+.btn-zoom:hover {
+  transform: scale(1.2);
+}
+.btn-translate:hover {
+  transform: rotate(5deg);
+}
