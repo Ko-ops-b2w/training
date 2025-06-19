@@ -33,6 +33,7 @@ function imageBack(){
 }
 
 
+
 /**
  * la function initGame sert à initialiser le jeux 
  */
@@ -109,7 +110,7 @@ function verifGagnant() {
     const motChoisi = motSelectionner.split("").every(l => lettreChoisi.includes(l));
                          
 if (motChoisi){
-    messageP.textContent = "Bravo vous avez gagné !";
+    messageP.textContent = "🎉 Bravo vous avez gagné !";
     score++
     scores.textContent = score;
    
@@ -125,7 +126,7 @@ if (motChoisi){
  */
 function verifPerdu() {
     if (erreur >= plusErreurs) {
-        messageP.textContent = `Perdu ! Le mot était : ${motSelectionner}`;
+        messageP.textContent = `😢 Perdu ! Le mot était : ${motSelectionner}`;
        
         finDuJeu()
     }
