@@ -6,22 +6,29 @@
     <title>CV KKS</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="cv-body">
+  
+ <div class="button-container">
+  <button id="toggleBtn">Afficher / Masquer le CV</button>
+</div>
+
   
     <div class="cv-container">
      
     <header class="header">
-        <div>
+        <div class="header-text">
       <h1>Komi Senyo KOMLAVI</h1>
-      <p>Développeur Web Front-End</p>
-      <p><a href="mailto:senyokomlavi78@email.com">senyokomlavi78@email.com</a> | 07 58 62 94 25</p>
+      <p id="title">Développeur Web Front-End</p>
+      <p id="mail">senyokomlavi78@email.com | 07 58 62 94 25</p> 
       </div>
       <img src="P (1).png" alt="">
     </header>
 
     <section class="profil">
       <h2>Profil</h2>
-      <p>Passionné de développement web avec une forte expérience en HTML, CSS, JavaScript et React. Enthousiaste à l'idée de créer des interfaces dynamiques et accessibles.</p>
+      <p id="p-profil">Passionné de développement web avec une forte expérience en HTML, 
+        CSS, JavaScript et React. Enthousiaste à l'idée de créer des interfaces 
+        dynamiques et accessibles.</p>
     </section>
 
     <section class="competences">
@@ -39,7 +46,7 @@
     <section class="experience">
       <h2>Expérience professionnelle</h2>
       <h3>Développeur Web - Freelance</h3>
-      <p>2025 - Aujourd'hui</p>
+      <p>2025 - Aujourd'hui(En formation)</p>
       <ul>
         <li>Création de sites vitrines pour PME</li>
         <li>Intégration responsive et animations CSS</li>
@@ -70,7 +77,7 @@
     <footer>
       <button onclick="telechargerCV()">📄 Télécharger le CV</button>
     </footer>
-    <div class="rectangle"></div> 
+    
   </div>
   
 <script src="index.js"></script>

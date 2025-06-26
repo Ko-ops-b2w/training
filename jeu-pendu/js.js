@@ -59,6 +59,33 @@ function displayMot() {
     motsDiv.innerHTML = motSelectionner
     .split("")
     .map(lettre => (lettreChoisi.includes(lettre) ? lettre : "_"))
+    // if(lettreChoisi.include(lettre)){
+    // lettre
+    // }
+    // else{
+    // "-"
+    // }
+
+
+    // .map(...)
+// → Méthode qui parcourt un tableau et retourne un nouveau tableau en appliquant une fonction 
+// à chaque élément.
+
+// lettre => (...)
+// → Fonction fléchée. Pour chaque élément du tableau (ici nommé lettre), on exécute 
+// l'expression entre parenthèses.
+
+// lettreChoisi.includes(lettre)
+// → Vérifie si la lettre actuelle est dans le tableau lettreChoisi.
+
+// ? lettre : "_"
+// → Opérateur ternaire :
+
+// Si la condition (lettreChoisi.includes(lettre)) est vraie, on garde la lettre.
+
+// Sinon, on remplace par "_".
+
+
     .join("");
 }
 
