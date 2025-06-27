@@ -14,7 +14,7 @@ passwordLength.addEventListener("input", () => {
 });
 
 generateButton.addEventListener("click", () => {
-    const length = parseInt(passwordLength.value);
+    const totalLength = parseInt(passwordLength.value);
     const useLowercase = lowercaseCheckbox.checked;
     const useUppercase = uppercaseCheckbox.checked;
     const useNumbers = numbersCheckbox.checked;
@@ -24,27 +24,72 @@ generateButton.addEventListener("click", () => {
     const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const numberChars = "0123456789";
     const symbolChars = "!@#$%^&*()_+[]{}|;:,.<>?";
-    let allChars = "";
-    if (useLowercase) allChars += lowercaseChars;
-    if (useUppercase) allChars += uppercaseChars;
-    if (useNumbers) allChars += numberChars;
-    if (useSymbols) allChars += symbolChars;
-    if (allChars.length === 0) {
-        passwordOutput.value = "Choisi des caractères!";
+
+    // Définis combien de caractères tu veux par type (à adapter)
+    let countUpper = 0;
+if (useUppercase) {
+    countUpper = 1;
+}
+let countLower = 0;
+if (useLowercase) {
+    countLower = 3;
+}
+
+let countNumber = 0;
+if (useNumbers) {
+    countNumber = 2;
+}
+
+let countSymbol = 0;
+if (useSymbols) {
+    countSymbol = 1;
+}
+
+
+
+    const totalRequested = countUpper + countLower + countNumber + countSymbol;
+
+    if (totalRequested > totalLength) {
+        passwordOutput.value = "Trop de caractères par type!";
         return;
     }
 
-    let password = "";
-    for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * allChars.length);
-        password += allChars[randomIndex];
+    function getRandomChars(chars, count) {
+        let result = "";
+        for (let i = 0; i < count; i++) {
+            const index = Math.floor(Math.random() * chars.length);
+            result += chars[index];
+        }
+        return result;
     }
+
+    let password = "";
+    if (useUppercase) password += getRandomChars(uppercaseChars, countUpper);
+    if (useLowercase) password += getRandomChars(lowercaseChars, countLower);
+    if (useNumbers) password += getRandomChars(numberChars, countNumber);
+    if (useSymbols) password += getRandomChars(symbolChars, countSymbol);
+
+    // Compléter le mot de passe si nécessaire avec les types cochés
+    let remainingLength = totalLength - password.length;
+    let extraChars = "";
+    if (remainingLength > 0) {
+        let allowedChars = "";
+        if (useUppercase) allowedChars += uppercaseChars;
+        if (useLowercase) allowedChars += lowercaseChars;
+        if (useNumbers) allowedChars += numberChars;
+        if (useSymbols) allowedChars += symbolChars;
+
+        extraChars = getRandomChars(allowedChars, remainingLength);
+    }
+
+    password += extraChars;
+
+    // Ne pas mélanger l'ordre (majuscule → minuscule → nombre → symbole)
     passwordOutput.value = password;
     passwordOutput.style.color = "white";
 
-    console.log(`Mot de passe généré : ${password}`);
+    navigator.clipboard.writeText(password); 
 
-   
-    
-    
+    console.log(`Mot de passe généré : ${password}`);
 });
+
